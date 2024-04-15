@@ -6,11 +6,11 @@ const app = express();
 app.use(express.json());
 
 app.get("/api/user/1", (req, res) => {
-    req.json(user);
+    res.json(user);
 });
 
 app.get("/api/videos/1", (req, res) => {
-    req.json(videos);
+    res.json(videos);
 });
 
 app.listen(8800, () => {
