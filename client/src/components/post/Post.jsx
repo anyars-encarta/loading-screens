@@ -1,7 +1,7 @@
 import React from 'react'
 import './post.css';
 
-const Post = ({ loading, video }) => {
+const Post = ({ video }) => {
   return (
     <div className='post'>
         <div className="postImgContainer">

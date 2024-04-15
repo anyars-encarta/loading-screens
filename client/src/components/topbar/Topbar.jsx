@@ -27,15 +27,20 @@ const Topbar = ({ loading, user }) => {
       </div>
 
       <div className="topRight">
-        <VideoCall className="topIcon" />
-        <Apps className="topIcon" />
-        <Notifications className="topIcon" />
-        <img className="topImg" src={user.avatar} alt="" />
-      </div>
+          <VideoCall className="topIcon" />
+          <Apps className="topIcon" />
+          <Notifications className="topIcon" />
+          <img className="topImg" src={user.avatar} alt="" />
+        </div>
       {/* {loading ? (
         <Skeleton type="top" />
       ) : (
-        
+        <div className="topRight">
+          <VideoCall className="topIcon" />
+          <Apps className="topIcon" />
+          <Notifications className="topIcon" />
+          <img className="topImg" src={user.avatar} alt="" />
+        </div>
       )} */}
     </div>
   );

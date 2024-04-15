@@ -24,7 +24,6 @@ const App = () => {
     getUser();
   }, []);
 
-  console.log(user);
   return (
     <div className="container">
       <Sidebar loading={loading} />
