@@ -24,7 +24,6 @@ const Feed = () => {
     getVideos();
   }, []);
 
-  console.log(loading)
   return (
     <div className='feed'>
       {loading ? (
