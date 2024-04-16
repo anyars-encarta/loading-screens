@@ -70,3 +70,15 @@
     margin-right: 40px;
     background-color: #313131;
 }
+
+.menuSk {
+    animation: skeleton 1s ease infinite alternate;
+}
+
+.menuSkItem {
+    margin-top: 40px; 
+    width: 40px;
+    height: 40px;
+    background-color: #313131;
+    border-radius: 50%;
+}

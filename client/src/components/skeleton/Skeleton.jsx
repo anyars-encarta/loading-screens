@@ -26,8 +26,18 @@ const Skeleton = ({ type }) => {
         </div>
     );
 
+    const MenuSkeleton = () => (
+        <div className="menuSk">
+            <div className="menuSkItem"></div>
+            <div className="menuSkItem"></div>
+            <div className="menuSkItem"></div>
+            <div className="menuSkItem"></div>
+        </div>
+    );
+
     if (type === "feed") return Array(COUNTER).fill(<FeedSkeleton />);
     if (type === "top") return <TopSkeleton />;
+    if (type === "menu") return <MenuSkeleton />;
 }
 
 export default Skeleton;

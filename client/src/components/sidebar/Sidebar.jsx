@@ -5,7 +5,7 @@ import {
   Subscriptions,
   VideoLibrary,
 } from "@material-ui/icons";
-// import Skeleton from "../skeleton/Skeleton";
+import Skeleton from "../skeleton/Skeleton";
 import "./sidebar.css";
 
 const Sidebar = ({ loading }) => {
@@ -13,25 +13,7 @@ const Sidebar = ({ loading }) => {
     <div className="sidebar">
       <div className="sidebarWrapper">
         <Menu />
-        <div>
-            <div className="sidebarItem active">
-              <Home />
-              <span>Home</span>
-            </div>
-            <div className="sidebarItem">
-              <Explore />
-              <span>Explore</span>
-            </div>
-            <div className="sidebarItem">
-              <Subscriptions />
-              <span>Subsriptions</span>
-            </div>
-            <div className="sidebarItem">
-              <VideoLibrary />
-              <span>Library</span>
-            </div>
-          </div>
-        {/* {loading ? (
+        {loading ? (
           <Skeleton type="menu" />
         ) : (
           <>
@@ -52,7 +34,7 @@ const Sidebar = ({ loading }) => {
               <span>Library</span>
             </div>
           </>
-        )} */}
+        )}
       </div>
     </div>
   );
