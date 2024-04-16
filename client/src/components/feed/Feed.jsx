@@ -28,7 +28,7 @@ const Feed = () => {
   return (
     <div className='feed'>
       {loading ? (
-        <Skeleton type='custom' />
+        <Skeleton type='feed' />
       ) : (
         videos.map((video) => <Post key={video.id} video={video} />)
       )}
