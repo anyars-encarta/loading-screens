@@ -82,3 +82,10 @@
     background-color: #313131;
     border-radius: 50%;
 }
+
+.circle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

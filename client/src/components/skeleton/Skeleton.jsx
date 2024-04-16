@@ -1,5 +1,6 @@
 import React from 'react';
 import './skeleton.css';
+import { CircularProgress } from '@material-ui/core';
 
 const Skeleton = ({ type }) => {
     const COUNTER = 8;
@@ -35,9 +36,16 @@ const Skeleton = ({ type }) => {
         </div>
     );
 
+    const Circle = () => (
+        <div className="circle">
+            <CircularProgress />
+        </div>
+    );
+
     if (type === "feed") return Array(COUNTER).fill(<FeedSkeleton />);
     if (type === "top") return <TopSkeleton />;
     if (type === "menu") return <MenuSkeleton />;
+    if (type === "circle") return <Circle />;
 }
 
 export default Skeleton;
