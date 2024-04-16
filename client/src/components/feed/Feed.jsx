@@ -24,11 +24,11 @@ const Feed = () => {
     getVideos();
   }, []);
 
-  // Skeleton types: feed, circle, 
+  // Skeleton types: feed, circle, custom
   return (
     <div className='feed'>
       {loading ? (
-        <Skeleton type='circle' />
+        <Skeleton type='custom' />
       ) : (
         videos.map((video) => <Post key={video.id} video={video} />)
       )}
