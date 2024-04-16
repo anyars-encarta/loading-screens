@@ -15,6 +15,7 @@ const App = () => {
     try {
       const response = await axios.get("/api/user/1");
       setUser(response.data);
+      setLoading(false);
     } catch (e) {
       console.log(e);
     };

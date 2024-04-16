@@ -17,7 +17,17 @@ const Skeleton = ({ type }) => {
         </div>
     );
 
+    const TopSkeleton = () => (
+        <div className="topSk">
+            <div className="topSkIcon"></div>
+            <div className="topSkIcon"></div>
+            <div className="topSkIcon"></div>
+            <div className="topSkImg"></div>
+        </div>
+    );
+
     if (type === "feed") return Array(COUNTER).fill(<FeedSkeleton />);
+    if (type === "top") return <TopSkeleton />;
 }
 
 export default Skeleton;
