@@ -40,6 +40,8 @@
 # 📖 Loading Screens<a name="about-project"></a>
 
 > Loading Screens is a react YouTube clone app that shows the use of three loading screen effects; using thumbnail skeletons, circular loading progress or a custom loading effect.
+>
+> progress or a custom loading effect.
 
 > To use the 3 loading screens, open `client/src/components/feed/Feed.jsx` and change `type` to either feed, circle or custom in `<Skeleton type='feed' />`.
 
